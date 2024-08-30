@@ -10,7 +10,7 @@ public class Calculator {
         System.out.println("Enter second number:");
         double num2 = input.nextDouble();
 
-        System.out.println("Choose an operation (+, -, *, /):");
+        System.out.println("Choose an operation (+, -, *, /,%):");
         char operator = input.next().charAt(0);
 
         double result = 0;
@@ -20,6 +20,7 @@ public class Calculator {
             case '-': result = num1 - num2; break;
             case '*': result = num1 * num2; break;
             case '/': result = num1 / num2; break;
+            case '%': result = num1 % num2; break;
             default: System.out.println("Invalid operator!"); return;
         }
 
